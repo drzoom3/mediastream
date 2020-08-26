@@ -14,7 +14,7 @@ const app = new Vue({
             
             this.startAudio();
             this.startVideo();
-            this.fetchComents();
+            this.fetchComments();
         },
 
         toggleCamera() {
@@ -86,14 +86,14 @@ const app = new Vue({
             });
         },
 
-        fetchComents() {
+        fetchComments() {
             fetch('https://jsonplaceholder.typicode.com/comments').then(response => {
                 return response.json();
             }).then(data => {
                 this.comments = data;
             }).catch( e => {
                 console.log('Reeeejected!', e);
-            });;
+            });
         }
     }
 })
