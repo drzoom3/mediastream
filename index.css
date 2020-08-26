@@ -1,0 +1,14 @@
+video {
+    display: none;
+}
+.video {
+    position: relative;
+}
+.video .spinner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+}
